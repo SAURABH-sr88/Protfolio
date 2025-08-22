@@ -1,0 +1,100 @@
+* { box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; scroll-behavior: smooth; 
+  background: linear-gradient(135deg, #f0f9ff, #e0e7ff, #fdf2f8);
+  transition: background .5s ease, color .5s ease;
+}
+
+/* Navbar */
+#navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,.7) !important;
+  transition: background .3s ease;
+}
+#navbar .nav-link { font-weight: 600; transition: color .2s ease; }
+#navbar .nav-link:hover { color: #0d6efd; }
+
+/* Hero */
+.hero {
+  padding-top: 9rem;
+  padding-bottom: 6rem;
+}
+.hero h1 {
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .btn { 
+  border-radius: 50rem; 
+  padding-left: 2rem; padding-right: 2rem; 
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); 
+  background: linear-gradient(45deg, #2563eb, #7c3aed);
+  border: none;
+  color: #fff;
+}
+.hero .btn:hover { box-shadow: 0 0 20px rgba(124,58,237,.6); transform: translateY(-2px); }
+.hero .socials a { font-weight: 600; color: #2563eb; text-decoration: none; }
+.hero .socials a:hover { text-decoration: underline; }
+
+/* Section titles */
+section h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: .5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: #7c3aed;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+/* Cards */
+.card {
+  transition: transform .3s ease, box-shadow .3s ease;
+  border-radius: 1rem;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 1rem 2rem rgba(124,58,237,.25);
+}
+
+/* Link underline animation */
+a {
+  position: relative;
+  transition: color .2s;
+}
+a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s;
+}
+a:hover::after { width: 100%; }
+
+/* Dark mode */
+body.dark {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+  color: #e2e8f0;
+}
+body.dark #navbar {
+  background: rgba(15,23,42,.8) !important;
+}
+body.dark .card {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+body.dark footer { background: #1e293b; }
+body.dark section h2::after { background: #38bdf8; }
