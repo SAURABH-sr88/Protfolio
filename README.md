@@ -24,12 +24,3 @@ This site showcases my **skills, projects, professional experience, and contact 
 
 ---
 
-## 📸 Screenshots
-### Home Page
-![Home](https://github.com/SAURABH-sr88/My_portfolio/assets/your-screenshot-id/home.png)
-
-### Projects
-![Projects](https://github.com/SAURABH-sr88/My_portfolio/assets/your-screenshot-id/projects.png)
-
----
-
