@@ -4,7 +4,7 @@ Welcome to my personal portfolio website!
 This site showcases my **skills, projects, professional experience, and contact information** — all in one place.
 
 🔗 **Live Demo**: [View Portfolio](https://saurabh-sr88.github.io/Protfolio/)  
-📄 **Resume**: [Download Resume](./Saurabh_resume.pdf)  
+📄 **Resume**: [Download Resume](./Saurabh-Kumar-Srivastava_resume.pdf)  
 
 ---
 
